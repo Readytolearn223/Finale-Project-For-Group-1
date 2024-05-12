@@ -1,0 +1,96 @@
+/* CSS to style input boxes */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Add a solid border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Optional: Style the focus state of the input */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #1ED760
+    ; /* Change border color when focused */
+    outline: none; /* Remove default focus outline */
+}
+
+
+
+
+body {
+    background-color: black;
+    color: white; /* Set text color to white */
+}
+
+/* Add other CSS rules as needed */ 
+
+
+
+/* Button styles */
+.sign-up-btn,
+.sign-in-btn,
+.sign-out-btn {
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-right: 10px; /* Add margin between buttons */
+}
+
+/* Hover effect */
+.sign-up-btn:hover,
+.sign-in-btn:hover,
+.sign-out-btn:hover {
+    background-color: #2980b9; /* Darker blue background color on hover */
+}
+
+/* Styling for buttons */
+button {
+    background-color: #1ED760; /* Green background color */
+    color: white; /* Set the text color to white */
+    border: none; /* Remove button borders */
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #14a34e; /* Darken the button color on hover */
+    color: white; /* Adjust text color on hover if needed */
+}
+
+
+body {
+    background-color: #000000;
+    margin-left: 30px;
+
+}
+
+ p, label {
+    color: #FFFFFF;
+}
+
+h2 {
+    color: #65D46E;
+    font-family: "Ubuntu";
+}
+
+ button {
+    background-color: #65D46E;
+    color: #FFFFFF;
+    margin-left: 60px;
+ }
+
+ p {
+    margin-top: 10px;
+ }
+
+ 

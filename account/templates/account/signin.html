@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'account.css' %}">
+    <style>
+        body {
+            text-align: center; /* Center align all content */
+        }
+        form {
+            display: inline-block; /* Display the form as an inline-block to center it */
+            text-align: left; /* Align text inside the form to the left */
+            margin-top: 20px; /* Add some space between the heading and the form */
+        }
+        img {
+            display: block; /* Make the image a block element for center alignment */
+            margin: 0 auto 20px; /* Center the image horizontally and add space below it */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Image Embedding with Link at the top -->
+<div>
+    <a href="https://www.spotify.com/">
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/01/Spotify_Logo_RGB_White-1.png" alt="Spotify Logo" width="150">
+    </a>
+</div>
+
+<h3>SignIn</h3>
+
+<form action="/signin" method="post">
+    {% csrf_token %}
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" placeholder="Enter Your Username" required><br>
+
+    <label for="pass1">Password</label>
+    <input type="password" id="pass1" name="pass1" placeholder="Enter Your Password" required><br>
+
+    <button type="submit">SignIn</button>
+</form>
+
+</body>
+</html>
